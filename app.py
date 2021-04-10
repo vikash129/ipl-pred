@@ -5,8 +5,19 @@ from flask import Flask , render_template ,request
 
 app = Flask(__name__)
 
+
+import joblib
+
+# ...
+
+# save
+#joblib.dump(rf, "some_path")
+
+# load 
+model = joblib.load("ipl_forest_model.joblib")
+
 #model = p.load(open('ipl_tree_model.dat' , 'rb'))
-model = p.load(open('ipl_forest_model.dat' , 'rb'))
+#model = p.load(open('ipl_forest_model.dat' , 'rb'))
 f = open('ipl_data.dat' , 'rb')
 
 encoded_data = p.load(f)
@@ -45,7 +56,7 @@ def predict():
         else:
             toss_winner = encoded_data[ decoded_data[team2] ]
 
-        data = [[team1 , team2 ,toss_winner , toss_decision,city, venue , eliminator]]
+        data = [[team1 , team2 ,toss_winner , toss_decision,city, venue ,neutral_venue, eliminator]]
 
         print(data)
 
