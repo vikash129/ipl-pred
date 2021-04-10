@@ -1,2 +1,4 @@
 /ml-flask
 /.vscode
+/req.txt
+/testing_model.py
