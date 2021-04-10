@@ -2,18 +2,17 @@ click==7.1.2
 Flask==1.1.2
 gunicorn==20.1.0
 itsdangerous==1.1.0
-#Jinja2==2.11.3
 Jinja2==2.10.1
 joblib==1.0.1
 MarkupSafe==1.1.1
-#scikit-learn==0.24.1
-scikit_learn==0.23.1
+scikit-learn==0.24.1
 scipy==1.6.2
 sklearn==0.0
 threadpoolctl==2.1.0
-pickleshare==0.7.5
-pywinpty==0.5.7
-PyYAML==5.4.1
-numpy==1.20.1
-#Werkzeug==1.0.1
-Werkzeug==0.16.0
+numpy==1.20.2
+Werkzeug==1.0.1
+wheel         0.36.2
+pip           21.0.1
+setuptools    50.3.2
+sklearn       0.0
+
