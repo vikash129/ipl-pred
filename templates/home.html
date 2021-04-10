@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL PREDICTION 2021</title>
+</head>
+<body>
+    
+    <form action="{{ url_for('predict') }}" >
+
+        
+        <h1>IPL PREDICTION</h1>
+
+        <b>select team1</b>
+        <select name="team1" id="" class="form-control" required>
+            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+            <option value="Kings XI Punjab">Kings XI Punjab</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+            <option value="Rajasthan Royals">Rajasthan Royals</option>
+            <option value="Chennai Super Kings">Chennai Super Kings</option>
+            <option value="Delhi Capitals">Delhi Capitals</option>
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+        </select>
+
+        <br>
+        <b>select team2</b>
+        <select name="team2" id="" class="form-control" required> 
+            <option value="Kings XI Punjab">Kings XI Punjab</option>
+            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+            <option value="Mumbai Indians">Mumbai Indians</option>
+            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+            <option value="Rajasthan Royals">Rajasthan Royals</option>
+            <option value="Chennai Super Kings">Chennai Super Kings</option>
+            <option value="Delhi Capitals">Delhi Capitals</option>
+            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+        </select>
+
+        <br>
+        <hr>
+        
+        <b>Toss Winner</b>
+        <input  type = 'radio' id="team1" class="form-control" value='team1' name = 'toss_winner' >
+        <label for ='team1' >Team1</label>
+        <input  type = 'radio' id="team2" class="form-control" value='team2' name = 'toss_winner'>
+        <label for ='team2' name = 'toss_winner'>Team2</label>
+
+        <br>
+        <hr>
+
+        <b>Toss decision</b>
+        <input  type = 'radio' id="bat" class="form-control" value='bat' name="toss_decision">
+        <label for ='bat'>BAT</label>
+        <input  type = 'radio' id="field" class="form-control" value='field' name="toss_decision">
+        <label for ='field'>FIELD</label>
+
+        <br>
+        <hr>
+
+        <b>city :</b>
+        <select name="city" id="" class="form-control" required>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Sharjah">Sharjah</option>
+            <option value="Abu Dhabi">Abu Dhabi</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Visakhapatnam">Visakhapatnam</option>
+            <option value="Ranchi">Ranchi</option>
+
+        </select>
+
+        <br>
+        <hr>
+        <b>stadium :</b>
+
+        <select name="venue" id="venue" class="form-control" required>
+            <option value="M Chinnaswamy Stadium">M Chinnaswamy Stadium</option>
+            <option value="Eden Gardens">Eden Gardens</option>
+            <option value="Sharjah Cricket Stadium">Sharjah Cricket Stadium</option>
+            <option value="Punjab Cricket Association Stadium, Mohali">Punjab Cricket Stadium, Mohali</option>
+            <option value="Feroz Shah Kotla">Feroz Shah Kotla</option>
+            <option value="Wankhede Stadium">Wankhede Stadium</option>
+            <option value="Sawai Mansingh Stadium">Sawai Mansingh Stadium</option>
+            <option value="Rajiv Gandhi International Stadium, Uppal">Rajiv Gandhi International Stadium, Uppal</option>
+            <option value="Maharashtra Cricket Association Stadium">Maharashtra Cricket Association Stadium</option>
+        </select>
+
+        <br>
+        <hr>
+
+        <b>Is Eliminator ?:</b>
+        <input  type = 'checkbox' id="N" class="form-control" value='N' name="eliminator">
+        <label for ='N'>NO</label>
+
+        <input  type = 'checkbox' id="Y" class="form-control" value='Y' name="eliminator"> 
+        <label for ='Y'>YES</label>
+
+        <br>
+
+        <button type="submit">SUBMIT</button>
+
+    </form>
+
+
+</body>
+</html>
