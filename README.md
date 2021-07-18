@@ -1,2 +1,2 @@
 # ipl-pred
-Visit at : vk-ipl-pred.herokuapp.com
+https://vk-ipl-pred.herokuapp.com
